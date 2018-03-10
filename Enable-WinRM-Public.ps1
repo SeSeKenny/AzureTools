@@ -1,0 +1,1 @@
+Get-NetFirewallRule | ? {$_.Name -eq 'WINRM-HTTP-In-TCP-PUBLIC'} | Set-NetFirewallRule -RemoteAddress Any
